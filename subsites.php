@@ -5,7 +5,7 @@ Plugin Name: Subsite Content
 Plugin URI: http://k12newsnetwork.com/
 Description: Used by millions to make WP better.
 Author: Bradford Knowton
-Version: 1.17
+Version: 1.19
 Author URI: http://bradknowlton.com/
 License: GPLv2 or later
 GitHub Plugin URI: https://github.com/DesignMissoula/DM-custom-content
@@ -80,7 +80,6 @@ class WPSubsitePlugin {
 
 	
 	}
-
 
 	/**
 	 * Registers and enqueues stylesheets for the administration panel and the
