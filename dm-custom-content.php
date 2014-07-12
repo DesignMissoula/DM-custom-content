@@ -3,9 +3,9 @@
 /*
 Plugin Name: DM Custom Content
 Plugin URI: http://designmissoula.com/
-Description: Used by millions to make WP better.
+Description: Used by millions to make WP better by adding custom content.
 Author: Bradford Knowton
-Version: 1.20.1
+Version: 1.20.2
 Author URI: http://bradknowlton.com/
 License: GPLv2 or later
 GitHub Plugin URI: https://github.com/DesignMissoula/DM-custom-content
