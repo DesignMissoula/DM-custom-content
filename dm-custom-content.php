@@ -1,11 +1,11 @@
 <?php
 
 /*
-Plugin Name: Subsite Content
-Plugin URI: http://k12newsnetwork.com/
+Plugin Name: DM Custom Content
+Plugin URI: http://designmissoula.com/
 Description: Used by millions to make WP better.
 Author: Bradford Knowton
-Version: 1.19
+Version: 1.20.1
 Author URI: http://bradknowlton.com/
 License: GPLv2 or later
 GitHub Plugin URI: https://github.com/DesignMissoula/DM-custom-content
