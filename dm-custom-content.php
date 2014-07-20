@@ -5,7 +5,7 @@ Plugin Name: DM Custom Content
 Plugin URI: http://designmissoula.com/
 Description: Used by millions to make WP better by adding custom content.
 Author: Bradford Knowton
-Version: 1.20.2
+Version: 1.20.3
 Author URI: http://bradknowlton.com/
 License: GPLv2 or later
 GitHub Plugin URI: https://github.com/DesignMissoula/DM-custom-content
@@ -28,6 +28,8 @@ class WPSubsitePlugin {
 		add_action( 'init', array( &$this, 'init_wp_subsite_plugin' ) );
 		
 		add_filter('widget_text', 'do_shortcode');
+		
+		add_filter( 'pre_get_posts', array( &this, 'custom_get_posts' ) );
 	}
 
 	/**
@@ -79,6 +81,18 @@ class WPSubsitePlugin {
 		register_post_type( 'subsite', $args );
 
 	
+		
+	
+	}
+
+	function custom_get_posts( $query ) {
+
+	  if( is_post_type_archive('subsite') ) { 
+	    $query->query_vars['orderby'] = 'name';
+	    $query->query_vars['order'] = 'ASC';
+	  }
+	
+	  return $query;
 	}
 
 	/**
